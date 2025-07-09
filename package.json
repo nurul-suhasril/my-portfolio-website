@@ -1,0 +1,43 @@
+{
+  "name": "my-portfolio-website",
+  "version": "1.0.0",
+  "description": "My personal portfolio website built with modern web technologies",
+  "main": "index.html",
+  "scripts": {
+    "dev": "python3 -m http.server 3000",
+    "dev-php": "php -S localhost:3000",
+    "dev-node": "npx http-server -p 3000 -c-1",
+    "docker:dev": "docker-compose up portfolio-dev",
+    "docker:prod": "docker-compose --profile production up portfolio-prod",
+    "docker:build": "docker build -t portfolio-website .",
+    "docker:stop": "docker-compose down",
+    "validate": "html5validator --root . --match '*.html'",
+    "format": "prettier --write '**/*.{html,css,js,json,md}'",
+    "serve": "python3 -m http.server 3000"
+  },
+  "keywords": [
+    "portfolio",
+    "website",
+    "html",
+    "css",
+    "javascript",
+    "responsive",
+    "modern",
+    "docker"
+  ],
+  "author": "Your Name",
+  "license": "MIT",
+  "devDependencies": {
+    "http-server": "^14.1.1",
+    "prettier": "^3.0.0",
+    "html5validator": "^0.4.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yourusername/my-portfolio-website.git"
+  },
+  "bugs": {
+    "url": "https://github.com/yourusername/my-portfolio-website/issues"
+  },
+  "homepage": "https://github.com/yourusername/my-portfolio-website#readme"
+}
